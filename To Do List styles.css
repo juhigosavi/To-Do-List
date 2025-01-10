@@ -1,0 +1,153 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #35f355, #dd1515);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #3a5e93;
+}
+
+.underline {
+    height: 2px;
+    width: 100v;
+    background: #ffffff;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Clock Styles */
+.clock {
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* Container Styling */
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    
+}
+
+.input-container label {
+    flex-basis: 100%;
+}
+
+
+.input-container input,
+.input-container select {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-container button {
+    background: #131011;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(255, 126, 179, 0.5);
+    transition: background 0.3s;
+}
+
+.input-container button:hover {
+    background: #ff6491;
+}
+
+/* Task List and Completed List */
+.task-container, .completed-container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li span {
+    flex-grow: 1;
+    margin-left: 10px;
+    color: #333;
+}
+
+li button {
+    background: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+li button:hover {
+    background: #388e3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .input-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-container input,
+    .input-container select {
+        flex-basis: 100%;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="clock" class="clock"></div>
+
+    <div class="container">
+        <h1> To-Do List App</h1>
+        <div class="underline"></div>
+        <br>
+        <!-- Task Input Section -->
+        <div class="input-container">
+            <label for="taskInput">Task:</label>
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+
+            <label for="taskDate">Date:</label>
+            <input type="date" id="taskDate">
+
+            <label for="taskTime">Time:</label>
+            <input type="time" id="taskTime">
+
+            <label for="taskPriority">Priority:</label>
+            <select id="taskPriority">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <!-- Add Task Button -->
+            <button onclick="addTask()">Add Task</button>
+        </div>
+    </div>
+
+    <!-- Task List Section -->
+    <div class="task-container">
+        <h2>Your Tasks</h2>
+        <div class="underline"></div>
+        <ul id="taskList"></ul>
+    </div>
+
+    <!-- Completed Tasks Section -->
+    <div class="completed-container">
+        <h2>Completed Tasks</h2>
+        <div class="underline"></div>
+        <ul id="completedList"></ul>
+    </div>
+
+    <!-- Bell Sound Notification -->
+    <audio id="bellSound" src="mixkit-bell-tick-tock-timer-1046.wav" preload="auto"></audio>
+
+    <!-- Scripts -->
+    <script src=" To Do List script.js"></script>
+</body>
+
+</html>
